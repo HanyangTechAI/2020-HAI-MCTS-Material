@@ -14,13 +14,13 @@ class TreeNode:
     W : the sum of values
     P : policy value
     '''
-    def __init__(self, action, color, prior: float):
+    def __init__(self, action, color, parent: TreeNode, prior: float):
         pass
 
     '''
     select node with argmax(Q + u)
     '''
-    def select(self):
+    def select(self) -> TreeNode:
         pass
 
     '''
