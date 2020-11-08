@@ -1,4 +1,8 @@
+import copy
 import numpy as np
+import math
+
+import game
 
 
 class TreeNode:
@@ -14,13 +18,19 @@ class TreeNode:
     W : the sum of values
     P : policy value
     '''
-    def __init__(self, action, color, parent: TreeNode, prior: float):
+    def __init__(self, action, color, parent, prior: float):
+        pass
+
+    '''
+    return whether this node is leaf
+    '''
+    def is_leaf(self) -> bool:
         pass
 
     '''
     select node with argmax(Q + u)
     '''
-    def select(self) -> TreeNode:
+    def select(self):
         pass
 
     '''
@@ -47,4 +57,10 @@ class MCTSEngine:
     generate best move after simulations
     '''
     def genmove(self, n_simulations: int):
+        pass
+
+    '''
+    print search result
+    '''
+    def dump_stat(self):
         pass
